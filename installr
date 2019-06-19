@@ -1,0 +1,10 @@
+library(installr)
+updater(cran_mirror="https://mirrors.ustc.edu.cn/CRAN/")  #install R fastly
+
+#copy packages from old version
+copy.packages.between.libraries(from = "F:\\R\\R-3.3.2\\library"
+                     , to = "F:\\R\\R-3.5.0\\library"
+                     , ask =T, keep_old = TRUE
+                     , do_NOT_override_packages_in_new_R = TRUE)
+                     
+                     
